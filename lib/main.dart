@@ -26,7 +26,7 @@ class ProfilePage extends StatelessWidget {
         title: const Text('Assignment for Unit 4'),
         centerTitle: true,
         foregroundColor: Colors.white,
-        backgroundColor: Colors.teal, // AppBar color
+        backgroundColor: Colors.teal,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -46,7 +46,6 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
 
-                // Profile picture layer
                 Positioned(
                   top: 155.0,
                   left: 20.0,
@@ -64,8 +63,8 @@ class ProfilePage extends StatelessWidget {
                       ],
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: Colors.white, // Border color
-                        width: 5.0, // Border width
+                        color: Colors.white,
+                        width: 5.0,
                       ),
                     ),
                     child: const CircleAvatar(
@@ -114,12 +113,9 @@ class ProfilePage extends StatelessWidget {
                 ),
               ],
             ),
-
             const SizedBox(
               height: 105,
             ),
-
-            // Side-by-side containers (Row)
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -129,8 +125,7 @@ class ProfilePage extends StatelessWidget {
                     margin: const EdgeInsets.all(16.0),
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255,
-                          255), // Background color for the section
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -154,7 +149,7 @@ class ProfilePage extends StatelessWidget {
                         InfoRow(Icons.gamepad, 'Hobbies',
                             'Listening to Music, Gaming, Photography, Cars'),
                         //   InfoRow(
-                        //       Icons.language, 'Languages', 'English, Russian'),
+                        //       Icons.language, 'Languages', 'English, Tagalog'),
                       ],
                     ),
                   ),
@@ -166,8 +161,7 @@ class ProfilePage extends StatelessWidget {
                     margin: const EdgeInsets.all(16.0),
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 255, 255,
-                          255), // Background color for the section
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -205,7 +199,7 @@ class ProfilePage extends StatelessWidget {
   }
 }
 
-// Widget for displaying an information row
+// For displaying information row
 class InfoRow extends StatelessWidget {
   final IconData icon;
   final String title;
